@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/task8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+   <div class="icon"> <i  onclick="myFunction()" class="fa-solid fa-moon  "></i> </div>
+    <div class="container shadow rounded-3 my-5">
+        <h1 class="text-center">CRUD SYSTEM</h1>
+            <input  id="btn1" type="text" placeholder="Enter the name" class="form-control p-3 ">
+            <br>
+            <input id="btn2" type="text" placeholder="Enter the age" class="form-control p-3">
+            <br>
+            <input id="btn3" type="text" placeholder="Enter the email" class="form-control p-3">
+            <br>
+            <textarea id="btn4" id="area" cols="30" rows="5" class="form-control" placeholder="Enter the massage" class=""></textarea>
+            <br>
+            <button onclick="Addproduct()" id="click" class="btn btn-dark m-3">Click Here</button>
+            <button  onclick="UpdateProduct()" id="update" class="btn btn-dark m-3">Update</button>
+            <button onclick="ClearInput()" type="text" id="clearBtn" class="btn btn-outline-danger w-3">Clear Form</button>
+            <input id="search" onkeyup="search(this.value)" type="text" placeholder="Search..." class="form-control m-auto w-50 m-2">
+            <br>
+        </div>
+<div class="container">
+    <table  class="table table-hover shadow">
+        <thead class="text-center" >
+            <th>Name</th>
+            <th>age</th>
+            <th>email</th>
+            <th>massage</th>
+            <th>Action</th>
+
+        </thead>
+        <tbody id="demo" class="text-center">
+
+        </tbody>
+
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+    
+    <script src="js/task8..js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
